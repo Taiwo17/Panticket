@@ -1,0 +1,113 @@
+.home-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36.688rem;
+  background-image: url('../../public/image/header-image.png');
+}
+
+.header-text {
+  text-align: center;
+  color: #fff;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.event-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 25.25rem;
+  margin: -70px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  padding: 64px;
+}
+.search-input,
+.category-input,
+.form-btn {
+  width: 100%;
+}
+
+.section-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #000d;
+}
+.event-container {
+  margin: 1rem 0;
+  /* align-self: flex-start; */
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.search-page {
+  align-items: flex-start;
+  padding: 1rem 7.938rem;
+  align-self: flex-start;
+  /* width: 100%; */
+}
+.search-title {
+  font-family: 'Syne', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 0.005em;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 574px) {
+  .search-form {
+    width: 50.375rem;
+    flex-direction: row;
+    height: 184px;
+  }
+  .header-text {
+    font-weight: 700;
+    font-size: 56px;
+  }
+  .search-input {
+    width: 33.438rem;
+  }
+  .category-input {
+    width: 20.5rem;
+  }
+  .form-btn {
+    width: 8.625rem;
+  }
+  .event-container {
+    padding: 5rem 7.938rem;
+    align-self: flex-start;
+    width: 100%;
+  }
+  .events {
+    display: grid;
+    gap: 1rem;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .featured-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 50% 50%);
+    gap: 2rem;
+  }
+
+  .search-page .search-result {
+    display: flex;
+    flex-direction: column;
+  }
+}

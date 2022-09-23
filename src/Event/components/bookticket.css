@@ -1,0 +1,119 @@
+.booking-container {
+  background-color: #fff;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border: 1rem;
+  padding: 2rem;
+  width: 50.438rem;
+  height: 38.875rem;
+  border-radius: 1rem;
+  margin-bottom: 20rem;
+}
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.container-title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  font-weight: bolder;
+  letter-spacing: 0.02em;
+  color: #94248c;
+}
+
+.ticket-form-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  gap: 32px;
+  width: 743px;
+  height: 488px;
+}
+
+.ticket-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 371px;
+  height: 488px;
+}
+.form-input {
+  width: 100%;
+}
+.close-icon > svg:nth-child(1) {
+  cursor: pointer;
+}
+.form-btn {
+  width: 100%;
+}
+.ticket-summary {
+  width: 340px;
+  height: 256px;
+  border: 1px solid rgba(51, 51, 51, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  gap: 24px;
+}
+
+.ticket-summary .ticket-type-group p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.ticket-type-group > p:nth-of-type(1) > span:nth-of-type(2) {
+  opacity: 50%;
+}
+
+.ticket-type-group {
+  margin-bottom: 3rem;
+}
+.ticket-type-group p {
+  padding-bottom: 0.5rem;
+}
+
+.type-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-price-group p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  padding-bottom: 0.5rem;
+}
+.price-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total-group {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .booking-container {
+    background-color: #fff;
+    box-shadow: none;
+  }
+  .container-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ticket-form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
